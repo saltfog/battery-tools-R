@@ -1,3 +1,5 @@
+
+
 # Load required packages
 library(dplyr)
 library(ggplot2)
@@ -30,9 +32,6 @@ cat("Average Discharge Voltage:", average_voltage, "V\n")
 threshold_voltage <- 1
 threshold_time <- data$time[which.min(abs(data$Act_I - threshold_voltage))]
 cat("Time at Threshold Voltage:", threshold_time, "s\n")
-
-
-# Perform additional analysis as needed
 
 # Save plots and results
 ggsave("discharge_plot.png")
